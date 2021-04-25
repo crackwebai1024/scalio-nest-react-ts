@@ -1,10 +1,9 @@
-import { Controller, Get, Res } from '@nestjs/common';
-import { join } from 'path';
-
+import { Controller, Get, Render } from '@nestjs/common';
 @Controller('')
 export class AppController {
-  @Get('')
-  async getPost(@Res() res) {
-    return res.sendFile(join(__dirname, 'build', 'index.html'));
+  @Get()
+  @Render('index')
+  root() {
+    return { message: 'Hello world!' };
   }
 }
