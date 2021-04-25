@@ -29,7 +29,12 @@
     "hbs": "^4.1.2",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
-    "rxjs": "^6.6.6"
+    "rxjs": "^6.6.6",
+    "ts-loader": "^8.0.18",
+    "ts-node": "^9.1.1",
+    "@nestjs/cli": "^7.6.0",
+    "@nestjs/schematics": "^7.3.0",
+    "@nestjs/testing": "^7.6.15"
   },
   "devDependencies": {
     "@nestjs/cli": "^7.6.0",
